@@ -1,0 +1,212 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:background="@color/background">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="40dp"
+        android:background="@color/background">
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/llForm"
+            android:background="@color/background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Add Participant:"
+                android:id="@+id/textView2" />
+
+            <EditText
+                android:hint="Full Name"
+                android:id="@+id/etPart_name"
+                android:inputType="textCapWords"
+                android:singleLine="true"
+                android:lines="1"
+                android:scrollHorizontally="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Participant 2"
+                android:id="@+id/etPart_name2"
+                android:inputType="textCapWords"
+                android:singleLine="true"
+                android:lines="1"
+                android:scrollHorizontally="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Participant 3"
+                android:id="@+id/etPart_name3"
+                android:inputType="textCapWords"
+                android:singleLine="true"
+                android:lines="1"
+                android:scrollHorizontally="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Participant 4"
+                android:id="@+id/etPart_name4"
+                android:inputType="textCapWords"
+                android:singleLine="true"
+                android:lines="1"
+                android:scrollHorizontally="true"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Phone Number"
+                android:id="@+id/etPart_phone"
+                android:singleLine="true"
+                android:lines="1"
+                android:scrollHorizontally="true"
+                android:inputType="phone"
+                android:digits="0123456789"
+                android:maxLength="10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="E-Mail"
+                android:id="@+id/etPart_email"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:scrollHorizontally="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Address"
+                android:id="@+id/etPart_address"
+                android:inputType="textCapWords"
+                android:singleLine="true"
+                android:lines="1"
+                android:scrollHorizontally="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Branch"
+                android:id="@+id/etPart_branch"
+                android:singleLine="true"
+                android:inputType="textCapSentences"
+                android:lines="1"
+                android:scrollHorizontally="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Total no. of team members"
+                android:id="@+id/etTeam_members"
+                android:inputType="number"
+                android:digits="1234"
+                android:maxLength="1"
+                android:singleLine="true"
+                android:lines="1"
+                android:scrollHorizontally="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:hint="Project Name"
+                android:id="@+id/etProject_name"
+                android:inputType="textCapSentences"
+                android:singleLine="true"
+                android:lines="1"
+                android:scrollHorizontally="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Project Domain"
+                android:id="@+id/etProject_domain"
+                android:singleLine="true"
+                android:lines="1"
+                android:inputType="textCapSentences"
+                android:scrollHorizontally="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Guide Name"
+                android:id="@+id/etGuide_name"
+                android:inputType="textCapWords"
+                android:singleLine="true"
+                android:lines="1"
+                android:scrollHorizontally="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="College Name"
+                android:inputType="textCapCharacters"
+                android:id="@+id/etCollege_name"
+                android:singleLine="true"
+                android:lines="1"
+                android:scrollHorizontally="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:hint="Total Amount Paid"
+                android:inputType="number"
+                android:maxLength="3"
+                android:id="@+id/etTotal_amount_paid"
+                android:singleLine="true"
+                android:lines="1"
+                android:scrollHorizontally="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <AutoCompleteTextView
+                android:hint="Project Type"
+                android:id="@+id/etProject_type"
+                android:completionThreshold="1"
+                android:inputType="textCapWords"
+                android:singleLine="true"
+                android:lines="1"
+                android:scrollHorizontally="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="5dp"
+            android:text="Clear"/>
+
+        <Button
+        android:id="@+id/bSubmit"
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

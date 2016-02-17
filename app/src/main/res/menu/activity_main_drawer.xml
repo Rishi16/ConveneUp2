@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/add_group"
+            android:icon="@drawable/add_group"
+            android:title="Add" />
+        <item
+            android:id="@+id/change_user"
+            android:icon="@drawable/change_user"
+            android:title="Update" />
+        <item
+            android:id="@+id/participant_details"
+            android:icon="@drawable/participant_details"
+            android:title="Participant Details" />
+        <item
+            android:id="@+id/your_registrations"
+            android:icon="@drawable/your_registrations"
+            android:title="Your Registrations" />
+        <item
+            android:id="@+id/all_registrations"
+            android:icon="@drawable/all_registrations"
+            android:title="All Registrations" />
+    </group>
+
+    <item android:title="Management">
+        <menu>
+            <item
+                android:id="@+id/teams_registered"
+                android:icon="@drawable/about_us"
+                android:title="Teams Registered" />
+            <item
+                android:id="@+id/teams_unregistered"
+                android:icon="@drawable/logout"
+                android:title="Teams Unregistered" />
+        </menu>
+    </item>
+
+    <item android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/aboutus"
+                android:icon="@drawable/about_us"
+                android:title="About us" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/logout"
+                android:title="Log out" />
+        </menu>
+    </item>
+</menu>
