@@ -111,7 +111,7 @@ public class BackgroundWorker extends AsyncTask<String,String,String> {
                 String username = (String) params[0];
                 String password = (String) params[1];
 
-                String link = "http://convene.co.in/phonelogin.php";
+                String link = "http://www.YOURLINK.com/Login.php";
                 String data = URLEncoder.encode("username", "UTF-8") + "=" + URLEncoder.encode(username, "UTF-8");
                 data += "&" + URLEncoder.encode("password", "UTF-8") + "=" + URLEncoder.encode(password, "UTF-8");
 
@@ -154,7 +154,7 @@ public class BackgroundWorker extends AsyncTask<String,String,String> {
                 String Part_name2 = (String) params[12];
                 String Part_name3 = (String) params[13];
                 String Part_name4 = (String) params[14];
-                String link = "http://convene.co.in/appprocess_add.php";
+                String link = "http://www.YOURLINK.com/add.php";
 
                 String data = URLEncoder.encode("Part_name", "UTF-8") + "=" + URLEncoder.encode(Part_name, "UTF-8");
                 data += "&" + URLEncoder.encode("Part_name2", "UTF-8") + "=" + URLEncoder.encode(Part_name2, "UTF-8");
@@ -191,7 +191,7 @@ public class BackgroundWorker extends AsyncTask<String,String,String> {
                 Log.d("rishi", "submitend");
             }else if (this.Choice.equals("View")) {
 
-                String link = "http://convene.co.in/appprocess_view.php";
+                String link = "http://www.YOURLINK/view.php";
                 URL url = new URL(link);
                 URLConnection conn = url.openConnection();
                 conn.setDoOutput(true);
@@ -225,7 +225,7 @@ public class BackgroundWorker extends AsyncTask<String,String,String> {
                 String Part_name3 = (String) params[14];
                 String Part_name4 = (String) params[15];
 
-                String link = "http://convene.co.in/appprocess_update.php";
+                String link = "http://www.YOURLINK/update.php";
 
                 String data = URLEncoder.encode("Part_name", "UTF-8") + "=" + URLEncoder.encode(Part_name, "UTF-8");
                 data += "&" + URLEncoder.encode("Part_name2", "UTF-8") + "=" + URLEncoder.encode(Part_name2, "UTF-8");
@@ -266,7 +266,7 @@ public class BackgroundWorker extends AsyncTask<String,String,String> {
                  sb = new StringBuilder();
                 try {
                     Log.d("rishi","in onprogressuodate try  Cid: "+ CId);
-                    String link = "http://convene.co.in/appprocess_check.php";
+                    String link = "http://www.YOURLINK/check.php";
                     HashMap<String, String> user = session.getUserDetails();
                     String Username = user.get(SessionManager.KEY_NAME);
                     String data = URLEncoder.encode("CId", "UTF-8") + "=" + URLEncoder.encode(CId, "UTF-8");

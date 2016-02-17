@@ -78,7 +78,7 @@ public class PartActivity extends AppCompatActivity {
             String result = null;
             try {
 
-                String link1 = "http://convene.co.in/appprocess_part.php";
+                String link1 = "http://www.YOURLINK.com/part.php";
                 URL url = new URL(link1);
 
 

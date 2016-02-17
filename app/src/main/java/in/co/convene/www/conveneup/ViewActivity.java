@@ -79,8 +79,8 @@ public class ViewActivity extends ListActivity {
             StringBuilder sb = new StringBuilder();
             try {
 
-                String link1 = "http://convene.co.in/appprocess_view.php";
-                String link2 = "http://convene.co.in/appprocess_registrant.php";
+                String link1 = "http://www.YOURLINK.com/view.php";
+                String link2 = "http://www.YOURLINK.com/registrant.php";
                 URL url = null;
                 if(Choice.equals("All")) {
                     url = new URL(link1);
